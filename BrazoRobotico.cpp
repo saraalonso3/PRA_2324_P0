@@ -19,15 +19,18 @@ double BrazoRobotico:: getZ(){
 	return z;
 }
 
-bool BrazoRobotico::getsujetandoObjeto(){
+bool BrazoRobotico::getsujetandoObjeto(bool sujetandoObjeto){
+	this->sujetandoObjeto = sujetandoObjeto;
 	return sujetandoObjeto;
 }
 
 void BrazoRobotico::coger(){
+	sujetandoObjeto= true;
 	std::cout<<"El robot coge el objeto"<<std::endl;
 }
 
 void BrazoRobotico::soltar(){
+	sujetandoObjeto=false;
 	std::cout<<"El robot suelta el objeto"<<std::endl;
 }
 
