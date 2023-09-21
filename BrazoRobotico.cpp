@@ -19,8 +19,7 @@ double BrazoRobotico:: getZ(){
 	return z;
 }
 
-bool BrazoRobotico::getsujetandoObjeto(bool sujetandoObjeto){
-	this->sujetandoObjeto = sujetandoObjeto;
+bool BrazoRobotico::getsujetandoObjeto(){
 	return sujetandoObjeto;
 }
 
@@ -38,6 +37,7 @@ void BrazoRobotico::mover(double a, double b, double c){
 	x=a;
 	y=b;
 	z=c;
+	std::cout<<"Se ha movido a la posicion " <<a<<", "<<b<<", "<<c<<std::endl;
 }
 
 	
